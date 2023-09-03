@@ -1,0 +1,132 @@
+/* first mobile */
+.cards__card {
+  background: #006241;
+  margin-top: 45px;
+  color: #fff;
+  position: relative;
+  width: 85%;
+}
+
+.cards {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__card-img {
+  width: 100%;
+}
+
+.cards__card-title span {
+  color: yellow;
+}
+.cards__card-container-text {
+  padding: 25px 15px;
+}
+
+.cards__card-description {
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.cards__card-circle {
+  background: yellow;
+  width: 65px;
+  height: 65px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.cards__card-btn {
+  background: #006241;
+  margin: 8px 0;
+  width: 150px;
+  font-size: 13px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 12px;
+  padding: 5px 0;
+  transition: all 1s;
+}
+
+.cards__card-btn:hover {
+  background: yellow;
+  border: yellow;
+}
+
+.cards__container-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__card-btn-1 {
+  background: #006241;
+  margin: 4px 0;
+  width: 150px;
+  font-size: 13px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 12px;
+  padding: 5px 0;
+  transition: all 1s;
+}
+
+.cards__card-btn-1:hover {
+  background: yellow;
+  border: yellow;
+}
+
+.cards__card-btn-2 {
+  background: #006241;
+  margin: 4px 0;
+  width: 175px;
+  font-size: 13px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 12px;
+  padding: 5px 0;
+  transition: all 1s;
+}
+
+.cards__card-btn-2:hover {
+  background: yellow;
+  border: yellow;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cards__card {
+    width: 40%;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .cards__container-btn {
+    flex-direction: row;
+  }
+  .cards__card-btn-2 {
+    margin-left: 10px;
+  }
+
+  .cards__card {
+    width: 450px;
+    height: 500px;
+    margin: 20px 15px;
+  }
+}
